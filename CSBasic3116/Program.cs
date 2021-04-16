@@ -12,6 +12,8 @@ namespace CSBasic3116
 
             var alpah = "알파";
             var 베타 = "한글 변수가 되네";
+            Console.Write(alpah);
+            Console.WriteLine(베타);
         }
     }
 }
