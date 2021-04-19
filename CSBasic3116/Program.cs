@@ -99,6 +99,7 @@ namespace CSBasic3116
             var number4 = '밥';
             var number5 = 100.0;
             var number6 = 100.0F;
+
         }
     }
 }
