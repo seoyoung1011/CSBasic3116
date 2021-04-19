@@ -66,12 +66,19 @@ namespace CSBasic3116
             bool TrueorFalse = true;
 
 
-
             /* 복합 대입 연산자 */
             string output2 = "Hello ";
             output2 += "World";
             output2 += "!";
             Console.WriteLine(output2);
+
+            /* 증감 연산자 */
+            int number = 10;             // num  출력
+            Console.WriteLine(number++); //  11   10
+            Console.WriteLine(++number); //  12   12
+            Console.WriteLine(number--); //  11   12
+            Console.WriteLine(--number); //  10   10
+            Console.WriteLine(number); //10
         }
     }
 }
