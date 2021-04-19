@@ -58,6 +58,12 @@ namespace CSBasic3116
 
             Console.WriteLine(DateTime.Now.Hour < 3 || 8 < DateTime.Now.Hour);
 
+            /* 변수 */
+            int a = 2147483647;
+            int b = 1;
+            Console.WriteLine(a + b);
+
+            bool TrueorFalse = true;
         }
     }
 }
