@@ -100,6 +100,19 @@ namespace CSBasic3116
             var number5 = 100.0;
             var number6 = 100.0F;
 
+            /* 입력 */
+            string input = Console.ReadLine();
+            Console.WriteLine("input: " + input);
+            while (true)
+            {
+                input = Console.ReadLine();
+                if (input != "q")
+                {
+                    Console.WriteLine("input: " + input);
+                }
+            }
+
+
         }
     }
 }
