@@ -94,7 +94,11 @@ namespace CSBasic3116
             Console.WriteLine(_char.GetType());
             Console.WriteLine(_string.GetType());
 
-
+            /* var 키워드 */
+            var number3 = 100;
+            var number4 = '밥';
+            var number5 = 100.0;
+            var number6 = 100.0F;
         }
     }
 }
