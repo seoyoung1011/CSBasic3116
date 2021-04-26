@@ -81,15 +81,78 @@ namespace CSBasic2
                     break;
             }
 
+
             /* 삼항 연산자 */
             int number = 2;
             Console.WriteLine(number % 2 == 0 ? true : false);
             Console.WriteLine(number % 2 == 0 ? "짝수입니다" : "홀수입니다.");
 
-
             Console.Write("숫자를 입력하세요 : ");
             input = int.Parse(Console.ReadLine());
             Console.WriteLine(number > 0 ? "자연수입니다." : "자연수가 아닙니다.");
+
+
+            /* 제어문 응용 */
+            Console.Write("입력: ");
+            String line = Console.ReadLine();
+
+            if (line.Contains("안녕"))
+            {
+                Console.WriteLine("안녕하세요!");
+            }
+            else
+            {
+                Console.WriteLine("^^");
+            }
+
+            ConsoleKeyInfo info = Console.ReadKey();
+            switch (info.Key)
+            {
+                case ConsoleKey.UpArrow:
+                    Console.WriteLine("위로 이동");
+                    break;
+                case ConsoleKey.RightArrow:
+                    Console.WriteLine("오른쪽으로 이동");
+                    break;
+                case ConsoleKey.DownArrow:
+                    Console.WriteLine("아래로 이동");
+                    break;
+                case ConsoleKey.LeftArrow:
+                    Console.WriteLine("왼쪽으로 이동");
+                    break;
+                default:
+                    Console.WriteLine("다른 키를 눌렀습니다.");
+                    break;
+            }
+
+            Console.WriteLine("반복해서 누르기!! (Q선택시 종료)");
+            int num = 0;
+            while(num == 0)
+            {
+                info = Console.ReadKey();
+                switch (info.Key)
+                {
+                    case ConsoleKey.UpArrow:
+                        Console.WriteLine("위로 이동");
+                        break;
+                    case ConsoleKey.RightArrow:
+                        Console.WriteLine("오른쪽으로 이동");
+                        break;
+                    case ConsoleKey.DownArrow:
+                        Console.WriteLine("아래로 이동");
+                        break;
+                    case ConsoleKey.LeftArrow:
+                        Console.WriteLine("왼쪽으로 이동");
+                        break;
+                    case ConsoleKey.Q:
+                        Console.WriteLine("나가기!!!!!!!!");
+                        num = 1;
+                        break;
+                    default:
+                        Console.WriteLine("다른 키를 눌렀습니다.");
+                        break;
+                }
+            }
 
         }
     }
