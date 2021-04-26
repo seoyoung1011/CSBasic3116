@@ -80,6 +80,17 @@ namespace CSBasic2
                     Console.WriteLine("대체 어디서 살고 계신 건가요?");
                     break;
             }
+
+            /* 삼항 연산자 */
+            int number = 2;
+            Console.WriteLine(number % 2 == 0 ? true : false);
+            Console.WriteLine(number % 2 == 0 ? "짝수입니다" : "홀수입니다.");
+
+
+            Console.Write("숫자를 입력하세요 : ");
+            input = int.Parse(Console.ReadLine());
+            Console.WriteLine(number > 0 ? "자연수입니다." : "자연수가 아닙니다.");
+
         }
     }
 }
