@@ -1,0 +1,16 @@
+C:\Users\young\source\repos\CSBasic2\CSBasic2\bin\Debug\net5.0\CSBasic2.exe
+C:\Users\young\source\repos\CSBasic2\CSBasic2\bin\Debug\net5.0\CSBasic2.deps.json
+C:\Users\young\source\repos\CSBasic2\CSBasic2\bin\Debug\net5.0\CSBasic2.runtimeconfig.json
+C:\Users\young\source\repos\CSBasic2\CSBasic2\bin\Debug\net5.0\CSBasic2.runtimeconfig.dev.json
+C:\Users\young\source\repos\CSBasic2\CSBasic2\bin\Debug\net5.0\CSBasic2.dll
+C:\Users\young\source\repos\CSBasic2\CSBasic2\bin\Debug\net5.0\ref\CSBasic2.dll
+C:\Users\young\source\repos\CSBasic2\CSBasic2\bin\Debug\net5.0\CSBasic2.pdb
+C:\Users\young\source\repos\CSBasic2\CSBasic2\obj\Debug\net5.0\CSBasic2.csprojAssemblyReference.cache
+C:\Users\young\source\repos\CSBasic2\CSBasic2\obj\Debug\net5.0\CSBasic2.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\young\source\repos\CSBasic2\CSBasic2\obj\Debug\net5.0\CSBasic2.AssemblyInfoInputs.cache
+C:\Users\young\source\repos\CSBasic2\CSBasic2\obj\Debug\net5.0\CSBasic2.AssemblyInfo.cs
+C:\Users\young\source\repos\CSBasic2\CSBasic2\obj\Debug\net5.0\CSBasic2.csproj.CoreCompileInputs.cache
+C:\Users\young\source\repos\CSBasic2\CSBasic2\obj\Debug\net5.0\CSBasic2.dll
+C:\Users\young\source\repos\CSBasic2\CSBasic2\obj\Debug\net5.0\ref\CSBasic2.dll
+C:\Users\young\source\repos\CSBasic2\CSBasic2\obj\Debug\net5.0\CSBasic2.pdb
+C:\Users\young\source\repos\CSBasic2\CSBasic2\obj\Debug\net5.0\CSBasic2.genruntimeconfig.cache
