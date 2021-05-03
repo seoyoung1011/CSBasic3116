@@ -22,12 +22,12 @@ namespace CSBasic3
 
 
             /* while / do while 반복문 */
-            int i = 0;
+            int ii = 0;
             int[] intArray3 = { 19, 27, 28, 26, 24 };
-            while(i < intArray3.Length)
+            while(ii < intArray3.Length)
             {
-                Console.WriteLine((i+1) + "번째 출력: " + intArray3[i]);
-                i++;
+                Console.WriteLine((ii+1) + "번째 출력: " + intArray3[ii]);
+                ii++;
             }
 
             string input;
@@ -51,6 +51,22 @@ namespace CSBasic3
                         break;
                 }
             } while (input == "exit");
+
+
+            /* for 반복문 / 역 for 문 */
+            //for(int i = '가'; i <= '힣'; i++)
+            //{
+            //    Console.Write((char)i);
+            //}
+            for (int i = 0; i < 10; i++)
+            {
+                Console.WriteLine(i);
+            }
+            Console.WriteLine();
+            for (int i = intArray3.Length-1; i >= 0; i--)
+            {
+                Console.WriteLine(intArray3[i]);
+            }
 
 
         }
