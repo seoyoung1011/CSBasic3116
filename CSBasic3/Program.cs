@@ -1,4 +1,5 @@
 ﻿using System;
+using System.Threading;
 
 namespace CSBasic3
 {
@@ -102,6 +103,69 @@ namespace CSBasic3
             }
 
 
+            /* 반복문 응용 */
+            string PoTo = "Potato Tomato";
+            Console.WriteLine(PoTo.ToUpper());
+            Console.WriteLine(PoTo.ToLower());
+
+            input = "감자 고구마 토마토";
+            string[] inputs = input.Split(new char[] { ' ' });
+            foreach(var item in inputs)
+            {
+                Console.WriteLine(item);
+            }
+
+            input = "  test               \n";
+            Console.WriteLine("::" + input.Trim() + "::");
+            Console.Read();
+
+            string[] array = { "감자", "고구마", "토마토", "가지" };
+            Console.WriteLine(string.Join(",", array));
+
+            Console.WriteLine("첫 번째 출력");
+            Thread.Sleep(1000);
+            Console.WriteLine("두 번째 출력");
+            Thread.Sleep(1000);
+            Console.WriteLine("세 번째 출력");
+            Thread.Sleep(2000);
+
+            int x = 1;
+            while(x < 50)
+            {
+                Console.Clear();
+                Console.SetCursorPosition(x, 5);
+                if (x % 3 == 0)
+                    Console.WriteLine("__@");
+                else if (x % 3 == 1)
+                    Console.WriteLine("_^@");
+                else
+                    Console.WriteLine("^_@");
+                Thread.Sleep(100);
+                x++;
+            }
+            bool state = true;
+            while (state)
+            {
+                ConsoleKeyInfo info = Console.ReadKey();
+                switch (info.Key)
+                {
+                    case ConsoleKey.UpArrow:
+                        Console.WriteLine("위로 이동");
+                        break;
+                    case ConsoleKey.DownArrow:
+                        Console.WriteLine("아래로 이동");
+                        break;
+                    case ConsoleKey.RightArrow:
+                        Console.WriteLine("위로 이동");
+                        break;
+                    case ConsoleKey.LeftArrow:
+                        Console.WriteLine("위로 이동");
+                        break;
+                    case ConsoleKey.X:
+                        state = false;
+                        break;
+                }
+            }
         }
     }
 }
