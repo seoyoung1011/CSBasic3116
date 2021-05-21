@@ -67,6 +67,39 @@ namespace CSBasic3
             {
                 Console.WriteLine(intArray3[i]);
             }
+            Console.WriteLine("\n\n");
+
+
+            /* foreach 반복문 / 중첩 반복문 / break / continue */
+            string[] strArray = { "사과", "배", "포도", "딸기", "수박" };
+            foreach(string item in strArray)
+            {
+                Console.WriteLine(item);
+            }
+            for(int i = 0; i < 5; i++)
+            {
+                for(int j = 0; j < i+1; j++)
+                {
+                    Console.Write("* ");
+                }
+                Console.WriteLine();
+            }
+            while (true)
+            {
+                Console.Write("숫자를 입력하세요(짝수를 입력하면 종료: ");
+                int intInput = int.Parse(Console.ReadLine());
+                if (intInput % 2 == 0)
+                    break;
+            }
+
+            for(int i = 1; i < 10; i++)
+            {
+                if ( i % 2 == 0)
+                {
+                    continue;
+                }
+                Console.WriteLine(i);
+            }
 
 
         }
