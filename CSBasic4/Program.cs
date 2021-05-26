@@ -6,7 +6,27 @@ using System.Threading.Tasks;
 
 namespace CSBasic4
 {
-    class Car
+    class MyMath
+    {
+        public int a;
+        public static double PI = 3.141592;
+        public static void Hello()
+        {
+            Console.WriteLine("Greeting~");
+        }
+    }
+    class Product
+    {
+        public string name = "default";
+        public int price = 1000;
+
+        public override string ToString()
+        {
+            return name + ": " + price;
+        }
+    }
+
+class Car
     {
         int carNumber;
         DateTime inTime;
@@ -61,6 +81,29 @@ namespace CSBasic4
             Console.WriteLine(Math.Round(52.273));
 
             Product product = new Product();
+            Product productA = new Product() { name = "감자", price = 2000 };
+            Console.WriteLine(productA);
+            Product productB = new Product() { name = "고구마", price = 1500 };
+            Console.WriteLine(productB);
+
+            Console.WriteLine(MyMath.PI);
+            MyMath.Hello();
+
+            /*
+            List<Student> students = new List<Student>();
+            students.Add(new Student() { name = "조서영", grade = 1 });
+            students.Add(new Student() { name = "황인탁", grade = 1 });
+            students.Add(new Student() { name = "최태양", grade = 3 });
+            students.Add(new Student() { name = "윤기호", grade = 3 });
+            
+
+            List<Student> students = new List<Student>() {
+                new Student() { name = "조서영", grade = 1 },
+                new Student() { name = "황인탁", grade = 1 },
+                new Student() { name = "최태양", grade = 3 },
+                new Student() { name = "윤기호", grade = 3 }
+            };
+            */
         }
     }
 
