@@ -95,7 +95,7 @@ class Car
             students.Add(new Student() { name = "황인탁", grade = 1 });
             students.Add(new Student() { name = "최태양", grade = 3 });
             students.Add(new Student() { name = "윤기호", grade = 3 });
-            
+            */
 
             List<Student> students = new List<Student>() {
                 new Student() { name = "조서영", grade = 1 },
@@ -103,7 +103,6 @@ class Car
                 new Student() { name = "최태양", grade = 3 },
                 new Student() { name = "윤기호", grade = 3 }
             };
-            */
         }
     }
 
