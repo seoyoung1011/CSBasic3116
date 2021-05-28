@@ -103,6 +103,14 @@ class Car
                 new Student() { name = "최태양", grade = 3 },
                 new Student() { name = "윤기호", grade = 3 }
             };
+            
+            foreach (var item in students)
+                Console.WriteLine(item);
+
+            for(int i = 0; i< students.Count(); i++)
+                if (students[i].grade > 0)
+                    students.RemoveAt(i);
+
         }
     }
 

@@ -11,6 +11,9 @@ namespace CSBasic4
         public DateTime birthday;
         public string favoriteyFood;
 
-
+        public override string ToString()
+        {
+            return name + ", " + grade;
+        }
     }
 }
