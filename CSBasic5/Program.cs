@@ -15,22 +15,27 @@ namespace CSBasic5
             Console.WriteLine(ml.Multi(103, 32));
             ml.Print();
             Console.WriteLine(ml.Sum(1, 100));
-            Console.WriteLine(MyMath.Abs(-82));
-            Console.WriteLine(MyMath.Abs(273));
+            MyMath.Abs(-82);
+            MyMath.Abs(273);
+            MyMath.Abs(-32.273);
+            MyMath.Abs(3000000000);
         }
         
         class MyMath
         {
-            public static int Abs(int input)
+            public static void Abs(int input)
             {
-                return (input < 0) ? -input : input;
-                /*
-                if (input < 0)
-                    return -input;
-                else
-                    return input;
-                */
+                Console.WriteLine("정수: " + ((input < 0) ? -input : input));
             }
+            public static void Abs(double input)
+            {
+                Console.WriteLine("더블: " + ((input < 0) ? -input : input));
+            }
+            public static void Abs(long input)
+            {
+                Console.WriteLine("롱: " + ((input < 0) ? -input : input));
+            }
+
         }
 
         class MultiClass
