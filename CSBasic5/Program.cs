@@ -28,8 +28,23 @@ namespace CSBasic5
 			Product productB = new Product("고구마", 2000);
 			Console.WriteLine(productA.id + ": " + productA.name);
 			Console.WriteLine(productB.ToString());
+
+			Console.WriteLine("첫번째 위치");
+			Console.WriteLine(Sample.value);
+			Console.WriteLine("두번째 위치");
+			Sample sample = new Sample();
+			Console.WriteLine("세번째 위치");
 		}
 
+		class Sample
+        {
+			public static int value;
+			static Sample()
+            {
+				value = 10;
+				Console.WriteLine("정적 생성자 호출.");
+            }
+        }
 
 		class Product
 		{
