@@ -36,6 +36,30 @@ namespace CSBasic5
 			Console.WriteLine("세번째 위치");
 		}
 
+		class box
+        {
+			private int width;
+			private int height;
+            public int Width{
+				get { return width; }
+                set { this.width = width; }
+            }
+			public int Height
+			{
+				get { return height; }
+				set { this.height = height; }
+			}
+			public box(int width, int height)
+            {
+				this.width = width;
+				this.height = height;
+            }
+			public int Area()
+            {
+				return this.width * this.height;
+            }
+        }
+
 		class Sample
         {
 			public static int value;
@@ -49,7 +73,7 @@ namespace CSBasic5
 		class Product
 		{
 			public static int couter = 0;
-			public int id;
+			public readonly int id;
 			public string name;
 			public int price;
 
@@ -60,6 +84,9 @@ namespace CSBasic5
 				this.name = name;
 				this.price = price;
 			}
+            ~Product(){
+				Console.WriteLine(this + "의 소멸자 호출");
+            }
             public override string ToString()
             {
 				return id + ": " + name;
