@@ -14,25 +14,20 @@ namespace CSBasic6
         [STAThread]
         static void Main()
         {
+            Parent parent = new Parent();
             Child child = new Child();
-            child.Method();
-            ((Parent)child).Method();
-            //오버라이딩을 하면 클래스형을 어떻게 변환해도 자식에서 다시 정의한 메서드가 호출된다.
+
+            parent.Test();
+            child.Test();
         }
     }
-    class Parent
+    sealed class Parent
     {
-        public virtual void Method()
-        {
-            Console.WriteLine("부모의 메서드");
-        }
+        public void Test() { }
     }
 
-    class Child : Parent
+    class Child : Parent //sealed클래스로 선언시 오류 발생
     {
-        public override void Method()
-        {
-            Console.WriteLine("자식의 메서드");
-        }
+        public void Test() { }
     }
 }
