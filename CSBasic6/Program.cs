@@ -25,8 +25,10 @@ namespace CSBasic6
                 item.Eat();
                 item.Sleep();
 
-                if (item is Dog) { Console.WriteLine("dog!"); }
-                if (item is Cat) { Console.WriteLine("cat!"); }
+                var dog = item as Dog;
+                if (dog != null) { dog.Bark(); }
+                var cat = item as Cat;
+                if (cat != null) { cat.Meow(); }
             }
         }
     }
