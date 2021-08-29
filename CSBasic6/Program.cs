@@ -21,6 +21,7 @@ namespace CSBasic6
     }
     class Parent
     {
+        public int variable = 273;
         public void Method()
         {
             Console.WriteLine("부모의 메서드");
@@ -29,15 +30,10 @@ namespace CSBasic6
 
     class Child : Parent
     {
-        public void Method()
-        {
-            Console.WriteLine("자식의 메서드");
-        }
-        /*
+        public new string variable = "hiding";
         public new void Method()
         {
             Console.WriteLine("자식의 메서드");
         }
-        */
     }
 }
