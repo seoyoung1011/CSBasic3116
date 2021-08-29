@@ -32,26 +32,23 @@ namespace CSBasic6
             }
         }
     }
-    class Dog
+    class Animal
     {
         public int Age { get; set; }
+
+        public Animal() { this.Age = 0; }
+
+        public void Eat() { Console.WriteLine("냠냠 먹습니다."); }
+        public void Sleep() { Console.WriteLine("쿨쿨 잠을 잡니다."); }
+    }
+    class Dog : Animal
+    {
         public string Color { get; set; }
 
-        public Dog() { this.Age = 0; }
-
-        public void Eat() { Console.WriteLine("냠냠 먹습니다."); }
-
-        public void Sleep() { Console.WriteLine("쿨쿨 잠을 잡니다."); }
         public void Bark() { Console.WriteLine("왈왈 짖습니다."); }
     }
-    class Cat
+    class Cat : Animal
     {
-        public int Age { get; set; }
-
-        public Cat() { this.Age = 0; }
-
-        public void Eat() { Console.WriteLine("냠냠 먹습니다."); }
-        public void Sleep() { Console.WriteLine("쿨쿨 잠을 잡니다."); }
         public void Meow() { Console.WriteLine("냥냥 웁니다."); }
     }
 }
