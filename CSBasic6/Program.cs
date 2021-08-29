@@ -14,41 +14,26 @@ namespace CSBasic6
         [STAThread]
         static void Main()
         {
-            List<Animal> Animals = new List<Animal>()
-            {
-                new Dog(), new Cat(), new Cat(), new Dog(),
-                new Dog(), new Cat(), new Dog(), new Dog()
-            };
-
-            foreach(var item in Animals)
-            {
-                item.Eat();
-                item.Sleep();
-
-                var dog = item as Dog;
-                if (dog != null) { dog.Bark(); }
-                var cat = item as Cat;
-                if (cat != null) { cat.Meow(); }
-            }
+            Child childA = new Child();
+            Child childB = new Child("string");
         }
     }
-    class Animal
+    class Parent
     {
-        public int Age { get; set; }
-
-        public Animal() { this.Age = 0; }
-
-        public void Eat() { Console.WriteLine("냠냠 먹습니다."); }
-        public void Sleep() { Console.WriteLine("쿨쿨 잠을 잡니다."); }
+        public Parent() { Console.WriteLine("Parent()"); }
+        public Parent(int param) { Console.WriteLine("Parent(int param"); }
+        public Parent(string param) { Console.WriteLine("Parent(string param"); }
     }
-    class Dog : Animal
-    {
-        public string Color { get; set; }
 
-        public void Bark() { Console.WriteLine("왈왈 짖습니다."); }
-    }
-    class Cat : Animal
+    class Child : Parent
     {
-        public void Meow() { Console.WriteLine("냥냥 웁니다."); }
+        public Child() : base(10) //Parent(int param) 호출
+        {
+            Console.WriteLine("Child(): base(10)");
+        }
+        public Child(string input) : base(input) //Parent(string param) 호출
+        {
+            Console.WriteLine("Chile(string input): base(input)");
+        }
     }
 }
