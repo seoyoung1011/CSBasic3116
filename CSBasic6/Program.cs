@@ -15,16 +15,29 @@ namespace CSBasic6
         static void Main()
         {
             Child child = new Child();
-            Console.WriteLine(child.variable);
+            child.Method();
+            ((Parent)child).Method();
         }
     }
     class Parent
     {
-        public int variable = 273;
+        public void Method()
+        {
+            Console.WriteLine("부모의 메서드");
+        }
     }
 
     class Child : Parent
     {
-        public string variable = "shadowing";
+        public void Method()
+        {
+            Console.WriteLine("자식의 메서드");
+        }
+        /*
+        public new void Method()
+        {
+            Console.WriteLine("자식의 메서드");
+        }
+        */
     }
 }
