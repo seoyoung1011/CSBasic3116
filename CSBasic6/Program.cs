@@ -11,29 +11,20 @@ namespace CSBasic6
         /// <summary>
         /// 해당 애플리케이션의 주 진입점입니다.
         /// </summary>
-        public static int number = 10;
+        [STAThread]
         static void Main()
         {
-            int number = 20;
-            Console.WriteLine(number);
+            Child child = new Child();
+            Console.WriteLine(child.variable);
         }
     }
     class Parent
     {
-        public Parent() { Console.WriteLine("Parent()"); }
-        public Parent(int param) { Console.WriteLine("Parent(int param"); }
-        public Parent(string param) { Console.WriteLine("Parent(string param"); }
+        public int variable = 273;
     }
 
     class Child : Parent
     {
-        public Child() : base(10) //Parent(int param) 호출
-        {
-            Console.WriteLine("Child(): base(10)");
-        }
-        public Child(string input) : base(input) //Parent(string param) 호출
-        {
-            Console.WriteLine("Chile(string input): base(input)");
-        }
+        public string variable = "shadowing";
     }
 }
