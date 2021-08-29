@@ -11,11 +11,11 @@ namespace CSBasic6
         /// <summary>
         /// 해당 애플리케이션의 주 진입점입니다.
         /// </summary>
-        [STAThread]
+        public static int number = 10;
         static void Main()
         {
-            Child childA = new Child();
-            Child childB = new Child("string");
+            int number = 20;
+            Console.WriteLine(number);
         }
     }
     class Parent
