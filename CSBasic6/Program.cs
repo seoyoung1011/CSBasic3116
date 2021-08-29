@@ -39,7 +39,7 @@ namespace CSBasic6
 
         public Dog() { this.Age = 0; }
 
-        public void Eat() { Console.Write("냠냠 먹습니다."); }
+        public void Eat() { Console.WriteLine("냠냠 먹습니다."); }
 
         public void Sleep() { Console.WriteLine("쿨쿨 잠을 잡니다."); }
         public void Bark() { Console.WriteLine("왈왈 짖습니다."); }
@@ -50,7 +50,7 @@ namespace CSBasic6
 
         public Cat() { this.Age = 0; }
 
-        public void Eat() { Console.Write("냠냠 먹습니다."); }
+        public void Eat() { Console.WriteLine("냠냠 먹습니다."); }
         public void Sleep() { Console.WriteLine("쿨쿨 잠을 잡니다."); }
         public void Meow() { Console.WriteLine("냥냥 웁니다."); }
     }
