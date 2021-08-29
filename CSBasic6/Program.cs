@@ -21,13 +21,17 @@ namespace CSBasic6
             child.Test();
         }
     }
-    sealed class Parent
+    class Parent
     {
-        public void Test() { }
+        public virtual void Test() { }
     }
 
-    class Child : Parent //sealed클래스로 선언시 오류 발생
+    class Child : Parent
     {
-        public void Test() { }
+        sealed public override void Test() { }
+    }
+    class GrandChild : Child
+    {
+        public override void Test() { }  //이번에는 여기서 오류 발생
     }
 }
