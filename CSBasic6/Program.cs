@@ -24,6 +24,9 @@ namespace CSBasic6
             {
                 item.Eat();
                 item.Sleep();
+
+                if (item is Dog) { Console.WriteLine("dog!"); }
+                if (item is Cat) { Console.WriteLine("cat!"); }
             }
         }
     }
