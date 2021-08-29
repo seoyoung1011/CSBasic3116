@@ -14,21 +14,16 @@ namespace CSBasic6
         [STAThread]
         static void Main()
         {
-            List<Dog> Dogs = new List<Dog>() { new Dog(), new Dog(), new Dog() };
-            List<Cat> Cats = new List<Cat>() { new Cat(), new Cat(), new Cat() };
-
-            foreach(var item in Dogs)
+            List<Animal> Animals = new List<Animal>()
             {
-                item.Eat();
+                new Dog(), new Cat(), new Cat(), new Dog(),
+                new Dog(), new Cat(), new Dog(), new Dog()
+            };
 
-                item.Sleep();
-                item.Bark();
-            }
-            foreach (var item in Cats)
+            foreach(var item in Animals)
             {
                 item.Eat();
                 item.Sleep();
-                item.Meow();
             }
         }
     }
