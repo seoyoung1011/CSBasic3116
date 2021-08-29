@@ -14,24 +14,20 @@ namespace CSBasic6
         [STAThread]
         static void Main()
         {
-            Parent parent = new Parent();
+            Parent parent = new Parent(); //여기서 오류 발생
             Child child = new Child();
 
             parent.Test();
             child.Test();
         }
     }
-    class Parent
+    abstract class Parent
     {
         public virtual void Test() { }
     }
 
     class Child : Parent
     {
-        sealed public override void Test() { }
-    }
-    class GrandChild : Child
-    {
-        public override void Test() { }  //이번에는 여기서 오류 발생
+        public override void Test() { }
     }
 }
